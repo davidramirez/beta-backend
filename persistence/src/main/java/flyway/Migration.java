@@ -20,9 +20,9 @@ public class Migration implements ServletContextListener {
 
     private void migrateDatabase() {
 
-        String url = Configuration.getProperty(Configuration.Properties.DB_URL.name());
-        String user = Configuration.getProperty(Configuration.Properties.DB_USER.name());
-        String pass = Configuration.getProperty(Configuration.Properties.DB_PASSWORD.name());
+        String url = Configuration.getProperty(Configuration.Properties.DB_URL.toString());
+        String user = Configuration.getProperty(Configuration.Properties.DB_USER.toString());
+        String pass = Configuration.getProperty(Configuration.Properties.DB_PASSWORD.toString());
 
         try {
             // Create the Flyway instance
