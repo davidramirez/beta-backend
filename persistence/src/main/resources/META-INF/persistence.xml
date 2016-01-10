@@ -16,7 +16,7 @@
             <property name="hibernate.c3p0.max_statements" value="${db.hibernate.c3p0.max_statements}"/>
             <property name="hibernate.c3p0.idle_test_period" value="${db.hibernate.c3p0.idle_test_period}"/>
 
-            <property name="hibernate.cache.provider_class"  value="${db.hibernate.cache.provider_class}"  />
+            <property name="hibernate.cache.region.factory_class"  value="${db.hibernate.cache.region.factory_class}"  />
             <property name="hibernate.cache.use_second_level_cache" value="${db.hibernate.cache.use_second_level_cache}" />
             <property name="hibernate.cache.use_query_cache" value="${db.cache.use_query_cache}" />
             <property name="hibernate.generate_statistics" value="${db.generate_statistics}" />
