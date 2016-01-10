@@ -1,6 +1,6 @@
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
     <persistence-unit name="persistence" transaction-type="RESOURCE_LOCAL">
-        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <provider>org.hibernate.</provider>
         <shared-cache-mode>DISABLE_SELECTIVE</shared-cache-mode>
 
         <properties>
@@ -9,6 +9,8 @@
             <property name="hibernate.connection.username" value="${db.user}"/>
             <property name="hibernate.connection.password" value="${db.password}"/>
             <property name="hibernate.dialect" value="${db.hibernate.dialect}"/>
+
+            <property name="hibernate.connection.provider_class" value="${db.hibernate.connection.provider_class}"/>
 
             <property name="hibernate.c3p0.min_size" value="${db.hibernate.c3p0.min_size}"/>
             <property name="hibernate.c3p0.max_size" value="${db.hibernate.c3p0.max_size}"/>
