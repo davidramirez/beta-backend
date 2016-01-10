@@ -8,9 +8,45 @@
     <artifactId>beta-backend</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>user-api</module>
         <module>persistence</module>
         <module>services</module>
     </modules>
+
+    <profiles>
+        <!-- The profile for the production environment -->
+        <profile>
+            <id>production</id>
+            <properties>
+                <env>production</env>
+            </properties>
+        </profile>
+
+        <!-- The profile for the testing environment -->
+        <profile>
+            <id>testing</id>
+            <properties>
+                <env>testing</env>
+            </properties>
+        </profile>
+
+        <!-- User profiles, ask Andoni if you need more information -->
+        <profile>
+            <id>local-andoni</id>
+            <properties>
+                <env>local-andoni</env>
+            </properties>
+        </profile>
+    </profiles>
+
+    <dependencies>
+        <!-- The whole project depends on javaEE -->
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
+        </dependency>
+    </dependencies>
 </project>

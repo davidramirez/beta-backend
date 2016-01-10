@@ -8,8 +8,8 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>services</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
         <!-- Depends on the persistence package to work with the model -->
